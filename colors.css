@@ -1,0 +1,25 @@
+html, body {height:100%;}
+body {margin:0;}
+#colors {display:block; height:100%;}
+#colors > div {width:16.66%; height:100%; float:left;}
+#colors > div:before {content:'test'; display:block; height:20%;}
+
+#colors .red {background:red;}
+
+
+
+#colors .red:before {
+	border:5px solid green;
+	background-color: red;
+	background-image:
+		linear-gradient(0deg, #f0f 25%, transparent 0),
+		linear-gradient(0deg, #0f0 50%, transparent 0);
+	background-size: 20px 20%;
+	background-position: 0 0, 40px 40px;
+}
+
+#colors .orange {background:orange;}
+#colors .yellow {background:yellow;}
+#colors .green {background:green;}
+#colors .blue {background:blue;}
+#colors .purple {background:purple;}
